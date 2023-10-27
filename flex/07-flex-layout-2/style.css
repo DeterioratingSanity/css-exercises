@@ -33,11 +33,20 @@ body {
   flex-grow: 1;
 }
 
+/* Contrary to the Instructions du Jour, but cooler-looking*/
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
   flex-shrink: 0;
+  transition: 0.5s;
+}
+@media (orientation: portrait){
+  .sidebar {
+    flex-shrink: .5;
+    min-width: 100px;
+    transition: 0.5s;
+  }
 }
 ul{
   list-style-type: none;
